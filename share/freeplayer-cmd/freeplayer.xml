@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE amarok-vlc-config>
+<config name="Freeplayer">
+    <vlc-options>--extraintf=http --http-host=:8080 --http-charset=ISO-8859-1 --sout="#std" --sout-standard-access=udp --sout-standard-mux=ts --sout-standard-dst=212.27.38.253:1234 --sout-ts-pid-video=68 --sout-ts-pid-audio=69 --sout-ts-pid-spu=70 --sout-ts-pcr=80 --subsdec-encoding=ISO-8859-1 --sout-transcode-maxwidth=720 --sout-transcode-maxheight=576 --http-src=/home/thier/Desktop/Amarok-Freeplayer/http-fbx --config="/home/thier/Desktop/Amarok-Freeplayer/vlcrc-fbx"</vlc-options>
+    <media-options>
+        <media types="mp3 ogg wav">:sout=#transcode:std :sout-transcode-ab=256 :sout-transcode-acodec=mpga :sout-transcode-channels=2 :sout-transcode-scodec=dvbs</media>
+        <media types="avi">:sout=#transcode:std :sout-transcode-ab=256 :sout-transcode-acodec=mpga :sout-transcode-channels=2 :sout-transcode-vb=9000 :sout-transcode-vcodec=mp2v :sout-transcode-vt=1000000 :sout-transcode-fps=25.0 :sout-ffmpeg-keyint=24 :sout-ffmpeg-interlace :no-sout-ffmpeg-interlace-me :file-caching=1000 :sout-transcode-soverlay</media>
+    </media-options>
+</config>
